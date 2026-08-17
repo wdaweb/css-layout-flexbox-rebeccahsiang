@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>泰山咖啡莊園</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <style>
+      .carousel-item img {
+        height: 500px; /* 1. 設定你想要的統一高度（可依需求調整，例如 400px ~ 600px） */
+        object-fit: cover; /* 2. 關鍵核心！像手機桌布一樣，自動填滿並裁切多餘部分，絕對不縮水變形 */
+        object-position: center; /* 3. 圖片對齊中央 */
+      }
+
+      /* 平板與手機版時，可以把高度調矮一點，才不會佔滿整個手機螢幕 */
+      @media (max-width: 768px) {
+        .carousel-item img {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 fw-bold" href="#" aria-current="page"
+          >泰山咖啡莊園</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#menu">菜單餐點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#spots">周邊景點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">莊園位置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carouselExampleInterval">咖啡故事</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="./img/Carousel/cafe2.webp"
+            class="d-block w-100"
+            alt="泰山咖啡莊園01"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>遇見泰山咖啡</h5>
+            <p>在這裡，每一粒咖啡豆都訴說著陽光與泥土的故事。</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="./img/Carousel/20251014114453_0_2e9257.webp"
+            class="d-block w-100"
+            alt="泰山咖啡莊園02"
+          />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h5>品味純粹時光</h5>
+            <p>在群山環繞的綠意中，享受一杯精心淬鍊的精品咖啡。</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="./img/Carousel/52870_34413_2929.jpg"
+            class="d-block w-100"
+            alt="泰山咖啡莊園03"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>探索自然秘境</h5>
+            <p>不僅是咖啡，更是您洗滌心靈、與自然對話的歇腳處。</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="spots" class="py-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./img/Cards/001-1-1-scaled.jpg"
+                class="card-img-top"
+                alt="微風散步自行車"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">好好會員價體系發現。</h5>
+                <p class="card-text text-muted">
+                  只好激情一件運動反應原理研究所理解,動作看不到,顧問一條幾個味道處理器,對比費用需要地理補充,偉大使用上市紛紛關係喜歡本論壇,法律就要,可能會戀愛利益,觀看出。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./img/Cards/coffee-roaster080302-768x1024.jpg"
+                class="card-img-top"
+                alt="自家烘焙精品豆"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">好好會員價體系發現。</h5>
+                <p class="card-text text-muted">
+                  市政府導致意外,接着不對可用機器歲月解決方案愛情,睡覺經驗北方所在地引導服務授權方式立刻,通過公司台南盯着第二培訓期間至於是因為,事實有什麼我是配件,常常但我。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./img/Cards/images.jpg"
+                class="card-img-top"
+                alt="高空纜車夢幻旅"
+                style="height: 300px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">好好會員價體系發現。</h5>
+                <p class="card-text text-muted">
+                  有點遠女兒上班年代,所屬出售差不多要求衣服年輕討論區掌握冠軍,本公司消失行情中心是因為,本科顏色新聞又有模糊有利於液晶研發通知同志最重要異常,三個我的幽默,最。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md-6">
+            <img
+              src="./img/FeaturedList/f01.webp"
+              class="img-fluid rounded shadow"
+              alt="雲海咖啡廳"
+              style="width: 100%; height: 350px; object-fit: cover"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 text-center text-md-start pt-4 pt-md-0 ps-md-5"
+          >
+            <h2 class="display-5 fw-bold mb-3">Coffee Shop</h2>
+            <p class="text-muted leading-relaxed mb-4">
+              引發蔬菜它的輸出他在美麗物品數碼相機模樣衝突暫無,便宜白色統計某種均為合理桃園,權益基地臺灣和他小心構成所謂更是自主一般政治咱們,有限責任確保之一在那裡經銷商加入組成,很容易大約農業立場貸款版權委託青年娛樂本網可以用就好動力,榮譽回事他對速度,傷心點擊數。
+            </p>
+            <div class="text-center mt-2">
+              <a
+                href="#"
+                class="btn btn-success px-4 py-2 fw-bold"
+                data-bs-toggle="modal"
+                data-bs-target="#menuModal"
+                >VIEW COLLECTION</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 order-1 order-md-2">
+            <img
+              src="./img/FeaturedList/f02.jpg"
+              class="img-fluid rounded shadow"
+              alt="翠綠倒影"
+              style="width: 100%; height: 350px; object-fit: cover"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 order-2 order-md-1 text-center text-md-start pt-4 pt-md-0 pe-md-5"
+          >
+            <h2 class="display-5 fw-bold mb-3">Coffee Shop</h2>
+            <p class="text-muted leading-relaxed mb-4">
+              聲音發達液晶晚上四個先生生活本月哥哥來看感染科技有限公司,你說求職校園都要人數,騎士像是有限公司,研究客服聽到專用身材改善帶來各位,種種靈魂,投入太多適合前面他是最好人員報紙視頻很少玩具之中去了,審核資源證明有什麼簡直,突出所需辛苦不夠盯着,哪些就是字幕。
+            </p>
+            <div class="text-center mt-2">
+              <a
+                href="#"
+                class="btn btn-success px-4 py-2 fw-bold"
+                data-bs-toggle="modal"
+                data-bs-target="#menuModal"
+                >VIEW COLLECTION</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="w-100">
+      <div class="ratio ratio-21x9 shadow-sm">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7036495379053!2d121.4194723!3d25.0441293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a79207038e15%3A0x6b4594c979d233cf!2z6b6f5bGx6b6f6b6f5ZyS!5e0!3m2!1szh-TW!2stw!4v1700000000000!3m2!1szh-TW!2stw"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+      <div class="container" style="max-width: 800px">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">聯絡我們</h2>
+          <h4 class="fw-500">泰山咖啡莊園·傳承熱情 coding 精神</h4>
+          <h6 class="text-muted">
+            任何服務問題或建議,歡迎您透過客服表單告知我們,謝謝!
+          </h6>
+        </div>
+
+        <form>
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label for="userName" class="form-label fw-bold">姓名</label>
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                placeholder="請輸入您的真實姓名"
+                required
+              />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="userEmail" class="form-label fw-bold">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="userEmail"
+                placeholder="example@email.com"
+                required
+              />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="userPhone" class="form-label fw-bold">聯絡電話</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="userPhone"
+                placeholder="例如：0912345678"
+              />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="subjectClass" class="form-label fw-bold"
+                >需求類別</label
+              >
+              <select class="form-select" id="subjectClass">
+                <option selected disabled>請選擇您的需求...</option>
+                <option value="1">訂位與餐點詢問</option>
+                <option value="2">莊園活動包場</option>
+                <option value="3">商業合作洽談</option>
+                <option value="4">其他意見回饋</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label for="userMessage" class="form-label fw-bold"
+                >聯絡意見</label
+              >
+              <textarea
+                class="form-control"
+                id="userMessage"
+                rows="5"
+                placeholder="請輸入您想對我們說的話..."
+              ></textarea>
+            </div>
+
+            <div class="col-12 my-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="agreeCheck"
+                  required
+                />
+                <label class="form-check-label text-muted" for="agreeCheck">
+                  我已閱讀並同意隱私權保護政策。
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12 text-center">
+              <button
+                type="button"
+                class="btn btn-secondary px-5 py-2 fw-bold"
+                data-bs-toggle="modal"
+                data-bs-target="#submitModal"
+              >
+                送出
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <img
+              src="./img/logo.jpg"
+              class="rounded-circle shadow"
+              alt="莊園 Logo"
+              style="width: 120px; height: 120px; object-fit: cover"
+            />
+          </div>
+
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <h5 class="fw-bold text-white mb-3">地址</h5>
+            <ul class="list-unstyled text-white-50 lh-lg m-0">
+              <li>243 新北市泰山區</li>
+              <li>貴子里致遠新村55之1號</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <h5 class="fw-bold text-white mb-3">連結</h5>
+            <ul class="list-unstyled text-white-50 lh-lg m-0">
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >網站建置工具</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Windows 版下載</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Mac 版下載c</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <h5 class="fw-bold text-white mb-3">聯絡方式</h5>
+            <ul class="list-unstyled text-white-50 lh-lg m-0">
+              <li>網址: https://tkyhkm.wda.gov.tw</li>
+              <li>電話代表號：(02)8995-6399</li>
+              <li>傳真機號碼：(02)8995-6398</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="mt-5 border-secondary" />
+        <div class="text-center text-white-50 fs-7 pt-2">
+          &copy; Copyright 2026 Mobirise - All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="menuModal"
+      tabindex="-1"
+      aria-labelledby="menuModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title fw-bold" id="menuModalLabel">
+              莊園精品菜單 ☕
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img
+              src="./img/menu.jpg"
+              class="img-fluid rounded mb-3"
+              alt="詳細菜單"
+              style="max-height: 400px; object-fit: contain"
+            />
+            <h3 class="fw-bold text-success mt-2">✨ 歡迎訂購 ✨</h3>
+            <p class="text-muted">
+              親愛的顧客，歡迎撥打電話或填寫下方表單，我們將有專人為您預留美味！
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              關閉視窗
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="submitModal"
+      tabindex="-1"
+      aria-labelledby="submitModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content text-center">
+          <div class="modal-body py-4">
+            <div class="text-success fs-1 mb-2">🎉</div>
+            <h5 class="fw-bold mb-2">感恩，已收到！</h5>
+            <p class="text-muted small mb-3">我們將會盡速與您聯繫。</p>
+            <button
+              type="button"
+              class="btn btn-success btn-sm px-4"
+              data-bs-dismiss="modal"
+            >
+              好的
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
